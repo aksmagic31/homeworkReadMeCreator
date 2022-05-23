@@ -10,7 +10,7 @@ const chalk = require('chalk');
 const questions = [
 	{
 		type: 'input',
-		name: 'project',
+		name: 'name',
 		message: 'What is your project name?',
 		
 	},
@@ -24,72 +24,107 @@ const questions = [
 	{
 		type: 'input',
         name: 'preview',
-		message: 'Do you want to put anything in the preview?',
+		message: 'provide a link for the preview?',
 		
 	},
 	{
 		type: 'input',
         name: 'install',
-		message: 'How do I install your application?',
+		message: 'How to install your application?',
 		
 	},
 	{
 		type: 'input',
+        name: 'usage',
 		message: 'What is your application used for?',
-		name: 'usage',
 		
 	},
 	{
 		type: 'checkbox',
+        name: 'license',
 		message: 'What kind of license is used?',
-		name: 'license',
-		choices: ['BSD', 'Apache', 'GPL'],
+		
+		choices: ['BSD', 'Apache', 'Boost'],
 	},
 	{
 		type: 'input',
-		message: 'What are the guidelines to contributing?',
-		name: 'contribute',
+        name: 'contribute',
+		message: 'What is the guideline to contributing?',
+		
 	
 	},
 	{
 		type: 'input',
-		message: 'How do I test your application?',
-		name: 'test',
+        name: 'test',
+		message: 'Do you want to provide any test info?',
+		
 		
 	},
 	{
 		type: 'input',
+        name: 'github',
 		message: 'What is your Github Username?',
-		name: 'github',
+		
 		
 	},
 	{
 		type: 'input',
+        name: 'email',
 		message: 'Please enter in your email',
-		name: 'email',
 	
 	},
 ];
 
 
 function createReadme(answers){
-    fs.writeFileSync('./README.md'),`
-# ${answers.title}
-## ${answers.description}
-### ${answers.}
-    `
+    fs.writeFileSync(
+		'./readme.md',
+		`# ${answers.name}
 
-}
+## Description
+- ${answers.description}
+
+## Application Preview
+<p align="left">
+<img alt="preview Gif" src="${answers.preview}">
+</p>
+
+## Installation
+- ${answers.install}
+
+## Usage
+- ${answers.usage}
+
+## Contributing
+- ${answers.contribute}
+
+## Test Instructions
+- ${answers.test}
+
+## Questions
+Please contact me with the methods below:
+- Github Username: ${answers.github}
+- Github Link: https://github.com/${answers.github} 
+- Email: ${answers.email}
+## License
+- Licensed under the: ${answers.license} 
+`
+	);
+};
+
+
+
 
 inquirer.prompt(questions)
 .then((answers) => {
-    createReadme(answers.title);
+    createReadme(answers);
     console.log(chalk.green(`successfully create README.md`))
 })
 .catch((error) => {
     console.error('something went wrong!', error);
 
 }
+)
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
