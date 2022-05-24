@@ -74,7 +74,7 @@ const questions = [
 	
 	},
 ];
-
+// function to create the read me using writefilesync
 
 function createReadme(answers){
     fs.writeFileSync(
@@ -85,9 +85,7 @@ function createReadme(answers){
 - ${answers.description}
 
 ## Application Preview
-<p align="left">
-<img alt="preview Gif" src="${answers.preview}">
-</p>
+ src="${answers.preview}"
 
 ## Installation
 - ${answers.install}
@@ -107,13 +105,14 @@ Please contact me with the methods below:
 - Github Link: https://github.com/${answers.github} 
 - Email: ${answers.email}
 ## License
+
 - Licensed under the: ${answers.license} 
 `
 	);
 };
 
 
-
+// using the inquirer to ask for questions
 
 inquirer.prompt(questions)
 .then((answers) => {
@@ -126,13 +125,13 @@ inquirer.prompt(questions)
 }
 )
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {
 
-}
+// }
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();

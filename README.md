@@ -1,29 +1,29 @@
-# wo
+# the README Generator
 
 ## Description
-- shi
+- user can use this README generator to easily generate a README file for their project.
 
 ## Application Preview
 <p align="left">
-<img alt="preview Gif" src="woshizhu">
+<img alt="preview Gif" src="not yet">
 </p>
 
 ## Installation
-- xiangzho
+- we can use the application using Node
 
 ## Usage
-- daj
+- the application is used for generate README files for developers
 
 ## Contributing
-- djasjda
+- no guidelines
 
 ## Test Instructions
-- hdasdalj
+- no tests yet
 
 ## Questions
 Please contact me with the methods below:
-- Github Username: dalskjdadaj
-- Github Link: https://github.com/dalskjdadaj 
-- Email: slsadsa
+- Github Username: aksmagic31
+- Github Link: https://github.com/aksmagic31 
+- Email: sammyzhang31@qq.com
 ## License
 - Licensed under the:  
