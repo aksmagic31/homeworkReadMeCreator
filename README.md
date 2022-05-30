@@ -1,29 +1,39 @@
-# the README Generator
+# The ReadMe Generator
+
+## Table of Contents
+- [Description](#description)
+- [Application Preview](#application-preview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Test Instructions](#test-instructions)
+- [Questions](#questions)
+- [License](#license)
 
 ## Description
-- user can use this README generator to easily generate a README file for their project.
+- using the Inquirer package to design a node application that can help developers with creating a professional looking ReadMe file
 
 ## Application Preview
-<p align="left">
-<img alt="preview Gif" src="not yet">
-</p>
+ src="https://drive.google.com/file/d/1WA81SrR5EUl3uBE2G_eUkodVtT0F6iBd/view"
 
 ## Installation
-- we can use the application using Node
+- By using the command "npm install" in the node application
 
 ## Usage
-- the application is used for generate README files for developers
+- the application is used for using the inquirer and fs function to help generate a README file for projects
 
-## Contributing
-- no guidelines
+## Contribution
+- None
 
 ## Test Instructions
-- no tests yet
+- No Tests
 
 ## Questions
 Please contact me with the methods below:
 - Github Username: aksmagic31
 - Github Link: https://github.com/aksmagic31 
 - Email: sammyzhang31@qq.com
+
 ## License
+
 - Licensed under the:  

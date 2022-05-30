@@ -81,6 +81,16 @@ function createReadme(answers){
 		'./readme.md',
 		`# ${answers.name}
 
+## Table of Contents
+- [Description](#description)
+- [Application Preview](#application-preview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Test Instructions](#test-instructions)
+- [Questions](#questions)
+- [License](#license)
+
 ## Description
 - ${answers.description}
 
@@ -93,7 +103,7 @@ function createReadme(answers){
 ## Usage
 - ${answers.usage}
 
-## Contributing
+## Contribution
 - ${answers.contribute}
 
 ## Test Instructions
@@ -104,6 +114,7 @@ Please contact me with the methods below:
 - Github Username: ${answers.github}
 - Github Link: https://github.com/${answers.github} 
 - Email: ${answers.email}
+
 ## License
 
 - Licensed under the: ${answers.license} 
