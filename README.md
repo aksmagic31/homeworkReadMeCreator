@@ -36,4 +36,4 @@ Please contact me with the methods below:
 
 ## License
 
-- Licensed under the:  
+- Licensed under the:  MIT LICENSE
